@@ -1,0 +1,41 @@
+# Dependencies
+markdown:         kramdown
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
+gems: ["jekyll-paginate"]
+
+#highlighter:      pygments
+
+excerpt_separator: <!--more-->  # you can specify your own separator
+
+# Permalinks
+permalink:        pretty
+#relative_permalinks: true
+
+# Setup
+title:            ''
+tagline:          'Kathryn Morrison'
+description:	  '<a href="https://scholar.google.ca/citations?user=gSawS7EAAAAJ&hl=en" target="_blank">Google Scholar</a>, <a href="https://twitter.com/syfi_24" target="_blank">@kathryn_tm</a>, <a href="https://github.com/kathryntmorrison">Github</a>, <a href="mailto:morrison.kathrynt@gmail.com">email</a>'
+#description:      'PhD student in <a href="http://www.mcgill.ca/epi-biostat-occh/" target="_blank">Biostatistics</a> at <a href="http://mcgill.ca" target="_blank">McGill Univeristy</a> under the #supervision of <a href="http://www.mcgill.ca/statisticalgenetics/" target="_blank">Celia Greenwood</a> and <a href="http://en.wikipedia.org/wiki/Mathieu_Blanchette_%28computational_biologist%29" #target="_blank">Mathieu Blanchette</a>.'
+url:              https://kathryntmorrison.github.io/
+baseurl:          '/'
+paginate:         5
+
+author:
+  name: 'Kathryn Morrison'
+  email: morrison.kathrynt@gmail.com
+  twitter: kathryn_tm
+  github: kathryntmorrison
+  disqus_shortname: kathryntmorrison
+  bio: PhD Student
+  google_scholar: https://scholar.google.ca/citations?user=gSawS7EAAAAJ&hl=en
+
+
+# Custom vars
+version:          2.1.0
+
+#github:
+#  repo:           https://github.com/kathryntmorrison
+
+

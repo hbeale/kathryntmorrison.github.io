@@ -1,0 +1,22 @@
+---
+title: "Currently in the works"
+author: "Kathryn"
+date: "March 29, 2016"
+output: html_document
+layout: post
+tags: []
+permalink: intro_post
+comments: yes
+---
+  
+  
+This site is (clearly) a work in progress, but I'm working on some blog posts that will begin to appear soon: 
+
+ * Introduction to integrated nested Laplace approximations (INLA) for applied users 
+ * Vector velocity mapping for infectious disease spread: applications and my forthcoming <texttt> outbreakvelocity </texttt>R package 
+ * Vignette on using  <texttt> sqldf </texttt> in R  
+ * Making a custom website using R markdown/knitr and github pages (like this one!) 
+
+<!--more-->
+
+Suggestions welcome! 
