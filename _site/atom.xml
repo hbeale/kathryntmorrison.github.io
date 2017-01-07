@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title></title>
+ <link href="https://kathryntmorrison.github.io//atom.xml" rel="self"/>
+ <link href="https://kathryntmorrison.github.io//"/>
+ <updated>2017-01-07T15:56:10-05:00</updated>
+ <id>https://kathryntmorrison.github.io/</id>
+ <author>
+   <name>Kathryn Morrison</name>
+   <email>morrison.kathrynt@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Manage your money in R</title>
+   <link href="https://kathryntmorrison.github.io//who_model"/>
+   <updated>2017-01-07T00:00:00-05:00</updated>
+   <id>https://kathryntmorrison.github.io//money</id>
+   <content type="html">&lt;p&gt;I was listening to &lt;a href=&quot;https://www.patreon.com/NSSDeviations&quot;&gt;Not So Standard Deviations&lt;/a&gt; 
+yesterday, which combines my love of podcasts with my love of data science - highly recommend!. The hosts were talking about possibly doing their taxes and/or managing their finances in R. &lt;!--more--&gt; This is something I’ve been meaning to do for years. I currently use a combination of Mint.com and MS Excel. It’s an awkward, non-automated system. This episode inspired me to finally create a workflow that would save me time and exploit my skillset (I’m much better in R than excel).&lt;/p&gt;
+
+&lt;p&gt;My financial situation is pretty simple, but I’m a student and self-employed with income from a variety of sources. I have bank accounts at 3 different places (long story), and a shared credit card with my boyfriend at yet another bank. I use Mint.com, which is great, but I like to categorize my spending and this shared card makes it harder - a lot of manual splitting transactions, or dividing by two in my head while trying to aggregate categories.&lt;/p&gt;
+
+&lt;p&gt;So now I’ve got a new workflow. I still am using Mint.com for data aggregation - it brings all of my account information from 4 institutions into one place in the same format (would be worth it just for that!), and also categorizes it pretty well automatically (and is easy to fine-tune manually). Then I export to CSV.&lt;/p&gt;
+
+&lt;p&gt;From there I wrote some code that will load and clean the CSV and generate a report with this month and last month spending and income summaries. Here’s a screenshot of an example, but I’ve blurred it out so you can’t see how much I spent on food (I love food).&lt;/p&gt;
+
+&lt;p&gt;Next steps: Adding more summaries, including visualizations, and maybe an interactive version using shiny.&lt;/p&gt;
+
+&lt;p&gt;Am I then just re-inventing a worse spreadsheet?…I don’t think so, because I am automating most fiddly stuff. Ideally I’d like to remove Mint.com from the equation but it’s too much trouble with all my banks right now. If you only have one bank, downloading the csv from there should work quite well too - but you’ll have to create a database or something similar with which to categorize expenses based on their description (not super complicated though).&lt;/p&gt;
+
+&lt;p&gt;Time will tell if I’ve got a lot more work to do before this is efficient, but I have that optimization feeling Hilary Parker described in the podcast, so I’m calling this a tentative win for now!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/report_example.jpg&quot; alt=&quot;Report so far (to be improved)&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>WHO air pollution model</title>
+   <link href="https://kathryntmorrison.github.io//who_model"/>
+   <updated>2016-09-28T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//WHO</id>
+   <content type="html">&lt;p&gt;One of my supervisors (Gavin Shaddick, University of Bath) has been working with his students and the WHO to estimate air pollution globally - the interactive data product went out yesterday and has been getting a lot of press. Very cool!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.who.int/phe/publications/air-pollution-global-assessment/en/&quot;&gt;WHO Report&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theguardian.com/environment/2016/sep/27/more-than-million-died-due-air-pollution-china-one-year&quot;&gt;Guardian article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sciencedaily.com/releases/2016/09/160927144248.htm&quot;&gt;Science Daily article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.npr.org/sections/thetwo-way/2016/09/27/495654086/who-says-92-percent-of-the-worlds-population-breathes-sub-standard-air&quot;&gt;NPR&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.nytimes.com/2016/09/28/world/air-pollution-smog-who.html&quot;&gt;NYTimes&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>New website!</title>
+   <link href="https://kathryntmorrison.github.io//thanks_sahir"/>
+   <updated>2016-08-22T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//sahir</id>
+   <content type="html">&lt;p&gt;Remade my website - looks nicer and is much easier to update now, thanks to &lt;a href=&quot;http://sahirbhatnagar.com/&quot;&gt;Sahir!&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Favourite statistics papers</title>
+   <link href="https://kathryntmorrison.github.io//fav_papers"/>
+   <updated>2016-07-14T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//fav_papers</id>
+   <content type="html">&lt;p&gt;I’ve been having a great time at the &lt;a href=&quot;https://biometricconference.org/&quot;&gt;Biometrics Conference in Victoria, BC&lt;/a&gt; (and not only because it’s my hometown). I’ve been enjoying sessions that are very relevant to my research area, and also some new and very intruiging topics for me (e.g., Bayesian non-parametrics). In both cases, I’ve had to do some real-time discrete googling to follow some of the talks, and it’s made me think about the set of papers that I tend to rely on and return to over and over. I think a lot of researchers and grad students have a set of papers like this. I’m going to compile mine (started below but will be updated), and adding a section of ones my colleagues recommend. Please contribute! Email or on twitter kt.morrison AT mail.mcgill.ca or @kathryn_tm&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Here are a few that I went straight to during the conference. I’ll be adding to this later.&lt;/p&gt;
+
+&lt;p&gt;[1] Efron, B., and Tibshirani, R. Bootstrap methods for standard errors, confidence intervals, and other measures of statistical accuracy. &lt;em&gt;Statistical Science&lt;/em&gt; (1986), 54–75.&lt;/p&gt;
+
+&lt;p&gt;[2] Geyer, C. J. Practical Markov chain Monte Carlo. &lt;em&gt;Statistical Science&lt;/em&gt; 7, 4 (1992), 473–483.&lt;/p&gt;
+
+&lt;p&gt;[3] Lumley, T., Diehr, P., Emerson, S., and Chen, L. The importance of the normality assumption
+in large public health data sets. &lt;em&gt;Annual Review of Public Health&lt;/em&gt; 23, 1 (2002), 151–169.&lt;/p&gt;
+
+&lt;p&gt;[4] Muff, S., Riebler, A., Rue, H., Saner, P., and Held, L. Bayesian analysis of measurement error models using INLA. &lt;em&gt;Journal of the Royal Statistical Society, Series C (Applied Statistics)&lt;/em&gt; 64, 2 (2013), 231–252.&lt;/p&gt;
+
+&lt;p&gt;[5] Rue, H., Martino, S., and Chopin, N. Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations. &lt;em&gt;Journal of the Royal Statistical Society: Series B (Statistical Methodology)&lt;/em&gt; 71, 2 (2009), 319–392.&lt;/p&gt;
+
+&lt;p&gt;[6] Smith, A. F., and Roberts, G. O. Bayesian computation via the Gibbs sampler and related Markov chain Monte Carlo methods. &lt;em&gt;Journal of the Royal Statistical Society, Series B (Statistical Methodology)&lt;/em&gt; (1993), 3–23.&lt;/p&gt;
+
+&lt;p&gt;[7] Wakefield, J., and Shaddick, G. Health-exposure modeling and the ecological fallacy. &lt;em&gt;Biostatistics&lt;/em&gt; 7, 3 (2006), 438–455.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>R package outbreakvelocity available</title>
+   <link href="https://kathryntmorrison.github.io//outbreakvelocity"/>
+   <updated>2016-06-29T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//outbreakvelocity</id>
+   <content type="html">&lt;p&gt;Last year, &lt;a href=&quot;https://www.linkedin.com/in/kate-zinszer-9051671a&quot; target=&quot;_blank&quot;&gt; Kate Zinszer &lt;/a&gt; had the idea to use surface trend analysis to estimate the front-wave velocity of Ebola viral disease (EVD) for the 2015 outbreak, based on how it has been prevoiusly used for rabies&lt;sup&gt;1&lt;/sup&gt; and sleeping sickness.&lt;sup&gt;2&lt;/sup&gt; We implemented the methodology and published our findings&lt;sup&gt;3&lt;/sup&gt;, and are currently working on using the method for the recent Brazilian outbreak of Zika virus.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Estimating front-wave velocity is a straightforward method but there is no pre-existing software we could find, and some of the calculations are a bit tedious. To streamline our work, I developed an R package that automates most of the calculations. All the package requires is an integer ranking of case date, and coordinates of the cases. These coordinates could either be the specific location of the case, or (more commonly), the centroid of the region and corresponding date of first case within the region.&lt;/p&gt;
+
+&lt;p&gt;I will be writing a more detailed vignette in the near future, but in the meantime the package, while under active development, is useable. &lt;strong&gt;Please&lt;/strong&gt; report any errors or requests for additional functionality to me, twitter: @kathryn_tm or email: kt.morrison AT mail.mcgill.ca&lt;/p&gt;
+
+&lt;p&gt;The package is not yet on the CRAN but is hosted on github can can be installed using devtools.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r
+library(devtools)
+install_github(&quot;kathryntmorrison/outbreakvelocity&quot;)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also &lt;a href=&quot;https://github.com/kathryntmorrison/outbreakvelocity&quot; target=&quot;_blank&quot;&gt; view the source code and submit pull requests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Ball, Frank G. “Front-wave velocity and fox habitat heterogeneity.” Population dynamics of rabies in wildlife. Edited by Philip J. Bacon (1985).&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;2&lt;/sup&gt; Berrang-Ford, Lea, et al. “Spatial analysis of sleeping sickness, southeastern Uganda, 1970–2003.” Emerging Infectious Diseases 12.5 (2006): 813-820.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;3&lt;/sup&gt; Zinszer K, Morrison K, Anema A, Majumder M, Brownstein J. 2015. &lt;a href=&quot;http://www.thelancet.com/journals/laninf/article/PIIS1473-3099(15)00234-0/abstract&quot; target=&quot;_blank&quot;&gt; ‘The velocity of Ebola spread in parts of west Africa.’ &lt;/a&gt; &lt;em&gt;The Lancet Infectious Diseases&lt;/em&gt;, 15(9): 1005-1007.site using R markdown/knitr and github pages (like this one!)&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Measures of forecast accuracy</title>
+   <link href="https://kathryntmorrison.github.io//forecastaccuracy"/>
+   <updated>2016-05-05T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//blog_forecast_accuracy</id>
+   <content type="html">&lt;p&gt;Test 
+There are a number of ways to summarize forecast accuracy across a forecast horizon, but I’ve come to realize recently how unclear it is which measure to use in which situation - and how non-standardized it is.&lt;/p&gt;
+
+&lt;p&gt;Sometimes we have data with different units, sometimes we have data with the same units but hugely different scales, sometimes outliers, and so on. We often want a measure that isn’t hugely sensitive to outliers and is scale-independent (relative). But, if we have data with many zeros, many relative measures can be problematic.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;There seem to really be two primary types of forecast accuracy metrics:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comparison between the true observed value &lt;script type=&quot;math/tex&quot;&gt;y_t&lt;/script&gt; and the predicted value &lt;script type=&quot;math/tex&quot;&gt;\hat{y_t}&lt;/script&gt;, based on the error e.g., &lt;script type=&quot;math/tex&quot;&gt;e_t = y_t - \hat{y_t}&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comparison between the accuracy of a proposed method (&lt;script type=&quot;math/tex&quot;&gt;e_t&lt;/script&gt; from above) and a baseline method, often a naive forecast such as the last available data point (random walk), or possibly adjusting for seasonal trends only.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The second option provides more flexibility but also potentially complicates comparisons between multiple proposed models, and is less interpretable than say a percentage error.&lt;/p&gt;
+
+&lt;p&gt;The most commonly used metrics that fit into type (1) above are: &lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Measure&lt;/th&gt;
+      &lt;th&gt;Formula (for Mean)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mean (Median) absolute error, M(d)AE&lt;/td&gt;
+      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{n}\sum | e_t|&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mean (Median) squared error, M(d)SE&lt;/td&gt;
+      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{n} \sum e_t^2&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Root Mean (Median) squared error, M(d)SE&lt;/td&gt;
+      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\sqrt{ \frac{1}{n} \sum e_t^2}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mean (Median) absolute percentage error, M(d)APE&lt;/td&gt;
+      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{n} \sum | \frac{e_t} {y_t}|&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Symmetric Mean (Median) absolute percentage error, SM(d)APE&lt;/td&gt;
+      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{n} \sum \frac{| e_t|} { |y_t| + |\hat{y_t}|}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;(I excluded the metrics based purely on ranking). &lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Measure&lt;/th&gt;
+      &lt;th&gt;Robustness to outliers&lt;/th&gt;
+      &lt;th&gt;Ability to address zeros&lt;/th&gt;
+      &lt;th&gt;Comparisons across different scales&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M(d)AE&lt;/td&gt;
+      &lt;td&gt;Stable&lt;/td&gt;
+      &lt;td&gt;Defined &lt;script type=&quot;math/tex&quot;&gt;y_t \in R&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;Scale/unit dependent&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M(d)SE&lt;/td&gt;
+      &lt;td&gt;Sensitive&lt;/td&gt;
+      &lt;td&gt;Defined &lt;script type=&quot;math/tex&quot;&gt;y_t \in R&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;Scale/unit dependent&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RM(d)SE&lt;/td&gt;
+      &lt;td&gt;Sensitive&lt;/td&gt;
+      &lt;td&gt;Defined &lt;script type=&quot;math/tex&quot;&gt;y_t \in R&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;Scale/unit dependent&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M(d)APE&lt;/td&gt;
+      &lt;td&gt;Stable&lt;/td&gt;
+      &lt;td&gt;Undefined if &lt;script type=&quot;math/tex&quot;&gt;y = 0&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;Relative measure (%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SM(d)APE&lt;/td&gt;
+      &lt;td&gt;Stable&lt;/td&gt;
+      &lt;td&gt;Undefined if &lt;script type=&quot;math/tex&quot;&gt;y = \hat{y}&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;Relative measure (%)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s both interesting and frustrating that there are no standard best practices. In fact, inappropriate metrics have been frequently used even in large prediction competitions!&lt;script type=&quot;math/tex&quot;&gt;^1&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;In my dissertation, I have Poisson count data at different scales, sometimes different units, with outliers, and with zero-inflation. I am struggling to find the best metric! I will likely end up using a ratio of mean absolute error between two methods since I am comparing (i) multivariate models to univariate, and (ii) temporal models to spatio-temporal. Ideally though, I would prefer to find a more interpretable measure. I am wondering if I can standardize something similar to MAPE, but using an average across the forecast horizon as the denominator, rather than the original value. I imagine something like this:&lt;/p&gt;
+
+&lt;p&gt;Horizon-standardized MAPE &lt;script type=&quot;math/tex&quot;&gt;= \frac{1}{n} \sum_{i=1}^n \frac{\|y_i - \hat{y_i}\| }{ \frac{1}{n} \sum_{i=1}^n y_i }&lt;/script&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This denominator would not be zero except in degenerate cases, would be consistent across different models (whereas the window may change), and this would standardize each absolute measure of accuracy by the expected value across the horizon. This definitely has some interpretation limitations but I’m going to continue to think about it and maybe look at some really simple simulation studies.&lt;/p&gt;
+
+&lt;p&gt;To be continued…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;^1&lt;/script&gt; Hyndman, Rob J., and Anne B. Koehler. “Another look at measures of forecast accuracy.” &lt;em&gt;International Journal of Forecasting&lt;/em&gt; 22.4 (2006): 679-688.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Prediction variance in Poisson GLMs</title>
+   <link href="https://kathryntmorrison.github.io//predictionvariance"/>
+   <updated>2016-04-20T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//blog_precision_poisson</id>
+   <content type="html">&lt;p&gt;I use Poisson GLM and hierarchical models all the time. I recently observed what appeared to be a super weird result: I had predicted values for an outcome and estimated the credible intervals around the forecasts, for two models. One was just a time-series, and one included spatial smoothing as well. As expected, the spatial smoothing traded a bit of bias for a much better prediction interval. But, on the advice of a clever friend, I plotted the average prediction interval width in a bar graph against population size. And what I saw was something that made absolutely no sense to me at first.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;It looked something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/blog_precision_poisson_fig1.png&quot; alt=&quot;WTF?&quot; /&gt; 
+Figure 1: WTF?&lt;/p&gt;
+
+&lt;p&gt;Even my committee at first was confused. Why would regions with larger populations have larger prediction variance? In hindsight it’s obvious - we have Poisson data with variable group sizes (offsets), and therefore we should be comparing the precision of the predicted rates, not counts. Clearly the count precision will be &lt;em&gt;positively&lt;/em&gt;, not &lt;em&gt;negatively&lt;/em&gt;, correlated with the expected count, which is itself correlated with population size.&lt;/p&gt;
+
+&lt;p&gt;To figure this out, I ended up doing a little simulation exercise:&lt;/p&gt;
+
+&lt;p&gt;First, I simulate data for a Poisson GLM with an offset (population)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;beta0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;beta1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.05&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beta1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rpois&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Second, I fit a Poisson GLM to the data&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;poisson&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Third, I generate new out-of-sample data for x and population.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;x.pred&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;newdata&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now we view the prediction standard errors of the counts as a function of the offset (population size)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;se.predict.count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict.glm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newdata&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newdata&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;se.fit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;response&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se.fit&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se.predict.count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;prediction standard error for counts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;pch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#4b6cb7&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;offset (population)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/source/2016-04-20-blog_precision_poisson/unnamed-chunk-4-1.png&quot; title=&quot;plot of chunk unnamed-chunk-4&quot; alt=&quot;plot of chunk unnamed-chunk-4&quot; style=&quot;display: block; margin: auto;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The offset and the prediction standard error (for count values) are positively correlated by definition (given how the data are generated in the simulation or assumed to be generated in real datasets). 
+test&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y_i \sim pois( \mu_i)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;log( \frac{\mu_i}{pop_i}) = \beta_0 + \beta_1 x_i&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mu_i = exp(\beta_0 + \beta_1 x_i + log(pop_i)) = exp(\beta_0 + \beta_1 x_i) * pop_i&lt;/script&gt;
+
+&lt;p&gt;This can be counter-intuitive since one would expect larger sample or population sizes to yield better precision. But when we include an offset, we should look at the standard error of the rate if we are going to compare across groups with different population sizes generating the counts.&lt;/p&gt;
+
+&lt;p&gt;So now instead let’s view the prediction standard errors of the &lt;strong&gt;rates&lt;/strong&gt; as a function of the offset (population size).&lt;/p&gt;
+
+&lt;p&gt;The model parameters from the fit model were based on rates - recall that including the offset changes the other parameter values - and so to estimate the a predicted rate we exclude any offset in the prediction. To estimate a count for a given region or group, the rate can be  multiplied by the group size.&lt;/p&gt;
+
+&lt;p&gt;There are two equivalent ways to estimate the standard errors of new predicted rates:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Set each group size to 1 as log(1) = 0 in the prediction dataset, then extract prediction variance&lt;/li&gt;
+  &lt;li&gt;Use the offset in the prediction, but divide the prediction variance for the count by the population&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The equivalency is shown below. There is no longer any correlation between the population size generating the counts and the prediction variance, because all are now based on standardized rates.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;pop.fixed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;newdata.fixed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop.fixed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   
+
+&lt;span class=&quot;n&quot;&gt;se.predict.rate1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict.glm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newdata&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newdata.fixed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;se.fit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;response&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se.fit&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;se.predict.rate2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;se.predict.count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;par&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mfrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se.predict.rate1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;prediction standard error for rates&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;pch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#4b6cb7&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;offset (population)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop.pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se.predict.rate2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;prediction standard error for rates&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;pch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#4b6cb7&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;offset (population)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/source/2016-04-20-blog_precision_poisson/unnamed-chunk-5-1.png&quot; title=&quot;plot of chunk unnamed-chunk-5&quot; alt=&quot;plot of chunk unnamed-chunk-5&quot; style=&quot;display: block; margin: auto;&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Currently in the works</title>
+   <link href="https://kathryntmorrison.github.io//intro_post"/>
+   <updated>2016-03-29T00:00:00-04:00</updated>
+   <id>https://kathryntmorrison.github.io//intro_post</id>
+   <content type="html">&lt;p&gt;This site is (clearly) a work in progress, but I’m working on some blog posts that will begin to appear soon:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Introduction to integrated nested Laplace approximations (INLA) for applied users&lt;/li&gt;
+  &lt;li&gt;Vector velocity mapping for infectious disease spread: applications and my forthcoming &lt;texttt&gt; outbreakvelocity &lt;/texttt&gt;R package&lt;/li&gt;
+  &lt;li&gt;Vignette on using  &lt;texttt&gt; sqldf &lt;/texttt&gt; in R&lt;/li&gt;
+  &lt;li&gt;Making a custom website using R markdown/knitr and github pages (like this one!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Suggestions welcome!&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
