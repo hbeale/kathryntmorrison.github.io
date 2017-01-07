@@ -11,7 +11,7 @@
 
   <title>
     
-    Tags &middot; 
+    Manage your money in R &middot; 
     
   </title>
 
@@ -117,7 +117,7 @@
       
         
           
-            <a class="sidebar-nav-item active" href="/tags/">Tags</a>
+            <a class="sidebar-nav-item" href="/tags/">Tags</a>
           
         
       
@@ -194,203 +194,76 @@
 
 
     <div class="content container">
-      	<div class="page">
-  <h1 class="page-title">Tags</h1>
-  <!-- Page code borrowed by dbtek -->
+      	<script>
+  // TogetherJS configuration would go here, but we'll talk about that
+  // later
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
 
 
+<div class="post">
+  <h1 class="post-title">Manage your money in R</h1>
+  <span class="post-date">07 Jan 2017</span>
+  <p>I was listening to <a href="https://www.patreon.com/NSSDeviations">Not So Standard Deviations</a> 
+yesterday, which combines my love of podcasts with my love of data science - highly recommend!. The hosts were talking about possibly doing their taxes and/or managing their finances in R. <!--more--> This is something I’ve been meaning to do for years. I currently use a combination of Mint.com and MS Excel. It’s an awkward, non-automated system. This episode inspired me to finally create a workflow that would save me time and exploit my skillset (I’m much better in R than excel).</p>
 
-<div >
-    <ul >
-    
-      
-      <li>
-          <a href="#Poisson-models-ref" >
-            Poisson models<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#R-ref" >
-            R<span class="badge pull-right">3</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#R-packages-ref" >
-            R packages<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#forecasting-ref" >
-            forecasting<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#infectious-disease-methods-ref" >
-            infectious disease methods<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#jekyll-ref" >
-            jekyll<span class="badge pull-right">3</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#markdown-ref" >
-            markdown<span class="badge pull-right">3</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#predicting-ref" >
-            predicting<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#research-ref" >
-            research<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-      
-      <li>
-          <a href="#statistics-ref" >
-            statistics<span class="badge pull-right">1</span>
-         </a>
-      </li>
-   
-   </ul>
+<p>My financial situation is pretty simple, but I’m a student and self-employed with income from a variety of sources. I have bank accounts at 3 different places (long story), and a shared credit card with my boyfriend at yet another bank. I use Mint.com, which is great, but I like to categorize my spending and this shared card makes it harder - a lot of manual splitting transactions, or dividing by two in my head while trying to aggregate categories.</p>
+
+<p>So now I’ve got a new workflow. I still am using Mint.com for data aggregation - it brings all of my account information from 4 institutions into one place in the same format (would be worth it just for that!), and also categorizes it pretty well automatically (and is easy to fine-tune manually). Then I export to CSV.</p>
+
+<p>From there I wrote some code that will load and clean the CSV and generate a report with this month and last month spending and income summaries. Here’s a screenshot of an example, but I’ve blurred it out so you can’t see how much I spent on food (I love food).</p>
+
+<p>Next steps: Adding more summaries, including visualizations, and maybe an interactive version using shiny.</p>
+
+<p>Am I then just re-inventing a worse spreadsheet?…I don’t think so, because I am automating most fiddly stuff. Ideally I’d like to remove Mint.com from the equation but it’s too much trouble with all my banks right now. If you only have one bank, downloading the csv from there should work quite well too - but you’ll have to create a database or something similar with which to categorize expenses based on their description (not super complicated though).</p>
+
+<p>Time will tell if I’ve got a lot more work to do before this is efficient, but I have that optimization feeling Hilary Parker described in the podcast, so I’m calling this a tentative win for now!</p>
+
+<p><img src="../img/report_example.jpg" alt="Report so far (to be improved)" /></p>
+
+
+If you have any questions or comments, please post them below. <!--If you liked this post, you can
+<a href="https://twitter.com/intent/tweet?url=https://kathryntmorrison.github.io//R_money&text=Manage your money in R&via=syfi_24" 
+   target="_blank">
+  share it with your followers</a> 
+or 
+<a href="https://twitter.com/kathryn_tm">
+  follow me on Twitter</a>!-->
+
 </div>
 
-<div >
-  
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
     
-    <div id="Poisson-models-ref">
-      <h2 >Posts tagged  with Poisson models</h2>
-      <ul >
-        
-          <li ><a href="/predictionvariance">Prediction variance in Poisson GLMs</a> <span >- April 20, 2016</span></li>
-        
-      </ul>
-    </div>
-  
+      <li>
+        <h3>
+          <a href="/who_model">
+            WHO air pollution model
+            <small>28 Sep 2016</small>
+          </a>
+        </h3>
+      </li>
     
-    <div id="R-ref">
-      <h2 >Posts tagged  with R</h2>
-      <ul >
-        
-          <li ><a href="/outbreakvelocity">R package outbreakvelocity available</a> <span >- June 29, 2016</span></li>
-        
-          <li ><a href="/forecastaccuracy">Measures of forecast accuracy</a> <span >- May 05, 2016</span></li>
-        
-          <li ><a href="/predictionvariance">Prediction variance in Poisson GLMs</a> <span >- April 20, 2016</span></li>
-        
-      </ul>
-    </div>
-  
+      <li>
+        <h3>
+          <a href="/thanks_sahir">
+            New website!
+            <small>22 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
     
-    <div id="R-packages-ref">
-      <h2 >Posts tagged  with R packages</h2>
-      <ul >
-        
-          <li ><a href="/outbreakvelocity">R package outbreakvelocity available</a> <span >- June 29, 2016</span></li>
-        
-      </ul>
-    </div>
-  
+      <li>
+        <h3>
+          <a href="/fav_papers">
+            Favourite statistics papers
+            <small>14 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
     
-    <div id="forecasting-ref">
-      <h2 >Posts tagged  with forecasting</h2>
-      <ul >
-        
-          <li ><a href="/forecastaccuracy">Measures of forecast accuracy</a> <span >- May 05, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="infectious-disease-methods-ref">
-      <h2 >Posts tagged  with infectious disease methods</h2>
-      <ul >
-        
-          <li ><a href="/outbreakvelocity">R package outbreakvelocity available</a> <span >- June 29, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="jekyll-ref">
-      <h2 >Posts tagged  with jekyll</h2>
-      <ul >
-        
-          <li ><a href="/R_money">Manage your money in R</a> <span >- January 07, 2017</span></li>
-        
-          <li ><a href="/who_model">WHO air pollution model</a> <span >- September 28, 2016</span></li>
-        
-          <li ><a href="/thanks_sahir">New website!</a> <span >- August 22, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="markdown-ref">
-      <h2 >Posts tagged  with markdown</h2>
-      <ul >
-        
-          <li ><a href="/R_money">Manage your money in R</a> <span >- January 07, 2017</span></li>
-        
-          <li ><a href="/who_model">WHO air pollution model</a> <span >- September 28, 2016</span></li>
-        
-          <li ><a href="/thanks_sahir">New website!</a> <span >- August 22, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="predicting-ref">
-      <h2 >Posts tagged  with predicting</h2>
-      <ul >
-        
-          <li ><a href="/predictionvariance">Prediction variance in Poisson GLMs</a> <span >- April 20, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="research-ref">
-      <h2 >Posts tagged  with research</h2>
-      <ul >
-        
-          <li ><a href="/fav_papers">Favourite statistics papers</a> <span >- July 14, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-    
-    <div id="statistics-ref">
-      <h2 >Posts tagged  with statistics</h2>
-      <ul >
-        
-          <li ><a href="/fav_papers">Favourite statistics papers</a> <span >- July 14, 2016</span></li>
-        
-      </ul>
-    </div>
-  
-</div>
+  </ul>
 </div>
 
 <script type="text/javascript"
@@ -399,7 +272,25 @@
 
 
 
+
  	
+  <!-- Add Disqus comments. -->
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'kathryntmorrison'; // required: replace example with your forum shortname
+    var disqus_identifier = "/R_money";
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
 
 
