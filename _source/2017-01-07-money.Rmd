@@ -1,5 +1,5 @@
 ---
-title: "Manage your money in R"
+title: "Managing my money using R"
 author: "Kathryn"
 date: "January 7, 2017"
 output: html_document
