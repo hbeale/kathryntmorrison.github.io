@@ -11,7 +11,7 @@
 
   <title>
     
-    Measures of forecast accuracy &middot; 
+    New version of R Studio &middot; 
     
   </title>
 
@@ -202,130 +202,15 @@
 
 
 <div class="post">
-  <h1 class="post-title">Measures of forecast accuracy</h1>
-  <span class="post-date">05 May 2016</span>
-  <p>Test 
-There are a number of ways to summarize forecast accuracy across a forecast horizon, but I’ve come to realize recently how unclear it is which measure to use in which situation - and how non-standardized it is.</p>
+  <h1 class="post-title">New version of R Studio</h1>
+  <span class="post-date">09 Jan 2017</span>
+  <p>I am loving some of the changes to the latest version of <a href="https://www.rstudio.com/">R Studio</a>. This is my favourite addition so far. As I write latex math mode in markdown, it will auto-render what the equations will look like when compiled. Saves me a lot of time making sure I got all the subscripts, etc correct without having to compile so often.</p>
 
-<p>Sometimes we have data with different units, sometimes we have data with the same units but hugely different scales, sometimes outliers, and so on. We often want a measure that isn’t hugely sensitive to outliers and is scale-independent (relative). But, if we have data with many zeros, many relative measures can be problematic.</p>
+<p><img src="../img/markdown_math.png" alt="Markdown auto-rendered math mode" /></p>
 
-<!--more-->
-
-<p>There seem to really be two primary types of forecast accuracy metrics:</p>
-
-<ol>
-  <li>
-    <p>Comparison between the true observed value <script type="math/tex">y_t</script> and the predicted value <script type="math/tex">\hat{y_t}</script>, based on the error e.g., <script type="math/tex">e_t = y_t - \hat{y_t}</script></p>
-  </li>
-  <li>
-    <p>Comparison between the accuracy of a proposed method (<script type="math/tex">e_t</script> from above) and a baseline method, often a naive forecast such as the last available data point (random walk), or possibly adjusting for seasonal trends only.</p>
-  </li>
-</ol>
-
-<p>The second option provides more flexibility but also potentially complicates comparisons between multiple proposed models, and is less interpretable than say a percentage error.</p>
-
-<p>The most commonly used metrics that fit into type (1) above are: <br /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Measure</th>
-      <th>Formula (for Mean)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mean (Median) absolute error, M(d)AE</td>
-      <td><script type="math/tex">\frac{1}{n}\sum | e_t|</script></td>
-    </tr>
-    <tr>
-      <td>Mean (Median) squared error, M(d)SE</td>
-      <td><script type="math/tex">\frac{1}{n} \sum e_t^2</script></td>
-    </tr>
-    <tr>
-      <td>Root Mean (Median) squared error, M(d)SE</td>
-      <td><script type="math/tex">\sqrt{ \frac{1}{n} \sum e_t^2}</script></td>
-    </tr>
-    <tr>
-      <td>Mean (Median) absolute percentage error, M(d)APE</td>
-      <td><script type="math/tex">\frac{1}{n} \sum | \frac{e_t} {y_t}|</script></td>
-    </tr>
-    <tr>
-      <td>Symmetric Mean (Median) absolute percentage error, SM(d)APE</td>
-      <td><script type="math/tex">\frac{1}{n} \sum \frac{| e_t|} { |y_t| + |\hat{y_t}|}</script></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>(I excluded the metrics based purely on ranking). <br />
-<br />
-<br /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Measure</th>
-      <th>Robustness to outliers</th>
-      <th>Ability to address zeros</th>
-      <th>Comparisons across different scales</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>M(d)AE</td>
-      <td>Stable</td>
-      <td>Defined <script type="math/tex">y_t \in R</script></td>
-      <td>Scale/unit dependent</td>
-    </tr>
-    <tr>
-      <td>M(d)SE</td>
-      <td>Sensitive</td>
-      <td>Defined <script type="math/tex">y_t \in R</script></td>
-      <td>Scale/unit dependent</td>
-    </tr>
-    <tr>
-      <td>RM(d)SE</td>
-      <td>Sensitive</td>
-      <td>Defined <script type="math/tex">y_t \in R</script></td>
-      <td>Scale/unit dependent</td>
-    </tr>
-    <tr>
-      <td>M(d)APE</td>
-      <td>Stable</td>
-      <td>Undefined if <script type="math/tex">y = 0</script></td>
-      <td>Relative measure (%)</td>
-    </tr>
-    <tr>
-      <td>SM(d)APE</td>
-      <td>Stable</td>
-      <td>Undefined if <script type="math/tex">y = \hat{y}</script></td>
-      <td>Relative measure (%)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><br /></p>
-
-<p>It’s both interesting and frustrating that there are no standard best practices. In fact, inappropriate metrics have been frequently used even in large prediction competitions!<script type="math/tex">^1</script>.</p>
-
-<p>In my dissertation, I have Poisson count data at different scales, sometimes different units, with outliers, and with zero-inflation. I am struggling to find the best metric! I will likely end up using a ratio of mean absolute error between two methods since I am comparing (i) multivariate models to univariate, and (ii) temporal models to spatio-temporal. Ideally though, I would prefer to find a more interpretable measure. I am wondering if I can standardize something similar to MAPE, but using an average across the forecast horizon as the denominator, rather than the original value. I imagine something like this:</p>
-
-<p>Horizon-standardized MAPE <script type="math/tex">= \frac{1}{n} \sum_{i=1}^n \frac{\|y_i - \hat{y_i}\| }{ \frac{1}{n} \sum_{i=1}^n y_i }</script> <br /></p>
-
-<p>This denominator would not be zero except in degenerate cases, would be consistent across different models (whereas the window may change), and this would standardize each absolute measure of accuracy by the expected value across the horizon. This definitely has some interpretation limitations but I’m going to continue to think about it and maybe look at some really simple simulation studies.</p>
-
-<p>To be continued…</p>
-
-<p><br />
-<br />
-<br /></p>
-
-<hr />
-
-<p><script type="math/tex">^1</script> Hyndman, Rob J., and Anne B. Koehler. “Another look at measures of forecast accuracy.” <em>International Journal of Forecasting</em> 22.4 (2006): 679-688.</p>
 
 If you have any questions or comments, please post them below. <!--If you liked this post, you can
-<a href="https://twitter.com/intent/tweet?url=https://kathryntmorrison.github.io//forecastaccuracy&text=Measures of forecast accuracy&via=syfi_24" 
+<a href="https://twitter.com/intent/tweet?url=https://kathryntmorrison.github.io//new_Rstudio&text=New version of R Studio&via=syfi_24" 
    target="_blank">
   share it with your followers</a> 
 or 
@@ -337,15 +222,6 @@ or
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/new_Rstudio">
-            New version of R Studio
-            <small>09 Jan 2017</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -361,6 +237,15 @@ or
           <a href="/who_model">
             WHO air pollution model
             <small>28 Sep 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/thanks_sahir">
+            New website!
+            <small>22 Aug 2016</small>
           </a>
         </h3>
       </li>
@@ -381,7 +266,7 @@ or
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'kathryntmorrison'; // required: replace example with your forum shortname
-    var disqus_identifier = "/forecastaccuracy";
+    var disqus_identifier = "/new_Rstudio";
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
