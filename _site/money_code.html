@@ -11,7 +11,7 @@
 
   <title>
     
-    R package outbreakvelocity available &middot; 
+    My code for financial summaries in R &middot; 
     
   </title>
 
@@ -206,34 +206,19 @@
 
 
 <div class="post">
-  <h1 class="post-title">R package outbreakvelocity available</h1>
-  <span class="post-date">29 Jun 2016</span>
-  <p>Last year, <a href="https://www.linkedin.com/in/kate-zinszer-9051671a" target="_blank"> Kate Zinszer </a> had the idea to use surface trend analysis to estimate the front-wave velocity of Ebola viral disease (EVD) for the 2015 outbreak, based on how it has been prevoiusly used for rabies<sup>1</sup> and sleeping sickness.<sup>2</sup> We implemented the methodology and published our findings<sup>3</sup>, and are currently working on using the method for the recent Brazilian outbreak of Zika virus.</p>
+  <h1 class="post-title">My code for financial summaries in R</h1>
+  <span class="post-date">13 Jan 2017</span>
+  <p>As promised, you can see the code I wrote for taking an exported csv from Mint.com and turning it into an earnings and spending summary report in R. There are four files (src.R, queries.R, reports.Rmd, and a css file that I just use to pretty the tables). <!--more--></p>
 
-<!--more-->
+<p><a href="https://github.com/kathryntmorrison/kathryntmorrison.github.io/tree/master/financial_code">Code</a></p>
 
-<p>Estimating front-wave velocity is a straightforward method but there is no pre-existing software we could find, and some of the calculations are a bit tedious. To streamline our work, I developed an R package that automates most of the calculations. All the package requires is an integer ranking of case date, and coordinates of the cases. These coordinates could either be the specific location of the case, or (more commonly), the centroid of the region and corresponding date of first case within the region.</p>
+<p>Some of this will need to be cusotmized to suit your needs - for example in the function clean_data, I exclude a bunch of categories that I don’t want to summarize (mostly transfers between accounts). You can tailor these for yourself.</p>
 
-<p>I will be writing a more detailed vignette in the near future, but in the meantime the package, while under active development, is useable. <strong>Please</strong> report any errors or requests for additional functionality to me, twitter: @kathryn_tm or email: kt.morrison AT mail.mcgill.ca</p>
-
-<p>The package is not yet on the CRAN but is hosted on github can can be installed using devtools.</p>
-
-<p><code class="highlighter-rouge">r
-library(devtools)
-install_github("kathryntmorrison/outbreakvelocity")
-</code></p>
-
-<p>You can also <a href="https://github.com/kathryntmorrison/outbreakvelocity" target="_blank"> view the source code and submit pull requests</a>.</p>
-
-<p><sup>1</sup> Ball, Frank G. “Front-wave velocity and fox habitat heterogeneity.” Population dynamics of rabies in wildlife. Edited by Philip J. Bacon (1985).</p>
-
-<p><sup>2</sup> Berrang-Ford, Lea, et al. “Spatial analysis of sleeping sickness, southeastern Uganda, 1970–2003.” Emerging Infectious Diseases 12.5 (2006): 813-820.</p>
-
-<p><sup>3</sup> Zinszer K, Morrison K, Anema A, Majumder M, Brownstein J. 2015. <a href="http://www.thelancet.com/journals/laninf/article/PIIS1473-3099(15)00234-0/abstract" target="_blank"> ‘The velocity of Ebola spread in parts of west Africa.’ </a> <em>The Lancet Infectious Diseases</em>, 15(9): 1005-1007.site using R markdown/knitr and github pages (like this one!)</p>
+<p>I’ll update this as I continue to improve it - going to add more summaries, more breakdowns, and some visuals.</p>
 
 
 If you have any questions or comments, please post them below. <!--If you liked this post, you can
-<a href="https://twitter.com/intent/tweet?url=https://kathryntmorrison.github.io//outbreakvelocity&text=R package outbreakvelocity available&via=syfi_24" 
+<a href="https://twitter.com/intent/tweet?url=https://kathryntmorrison.github.io//money_code&text=My code for financial summaries in R&via=syfi_24" 
    target="_blank">
   share it with your followers</a> 
 or 
@@ -245,15 +230,6 @@ or
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/money_code">
-            My code for financial summaries in R
-            <small>13 Jan 2017</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -269,6 +245,15 @@ or
           <a href="/R_money">
             Managing my money using R
             <small>07 Jan 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/who_model">
+            WHO air pollution model
+            <small>28 Sep 2016</small>
           </a>
         </h3>
       </li>
@@ -289,7 +274,7 @@ or
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'kathryntmorrison'; // required: replace example with your forum shortname
-    var disqus_identifier = "/outbreakvelocity";
+    var disqus_identifier = "/money_code";
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
