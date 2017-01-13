@@ -1,0 +1,39 @@
+---
+title: "Financial report"
+author: "Kathryn Morrison"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    css: mystyle.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+source('src.R')
+source('queries.R')
+today = Sys.Date() 
+ds1 = load_mint_data(transaction_download_date='2017-01-10')
+ds = clean_data(ds1)
+latest_transaction_date = as.Date(ds1$Date[1], format='%m/%d/%Y')
+tidy_ds_income_summary = income_summary(ds$tidy_ds_income, latest_transaction_date)
+tidy_ds_expense_summary = expense_summary(ds$tidy_ds_expense, latest_transaction_date)
+```
+
+This is an example financial report generated in R after pulling CSV data from Mint$^1$. 
+
+```{r two-tables, results='asis', eval=TRUE, echo=FALSE}
+
+#current_month = month(today, format='b')
+t1 = knitr::kable(tidy_ds_expense_summary, format = "html", col.names=c('category', 'current month', 'last month'), caption='Expenses')
+t2 = knitr::kable(tidy_ds_income_summary, format = "html", col.names=c('category', 'current month', 'last month'), caption='Income')
+cat(c('<table><tr valign="top"><td>', t1, '</td><td>', t2, '</td><tr></table>'),
+    sep = '')
+```
+
+
+
+<hr>
+
+\tiny
+$^1$ See www.mint.com for more information. Works in Canada and US. 
